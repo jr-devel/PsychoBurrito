@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block title %} Crear Cuenta {% endblock %}
+
+{% block content %}
+<div class="content-register">
+    <div class="register">
+        <picture>
+            <source srcset="{{ url_for('static',filename='img/logo_ipn-white.avif') }}" type="image/avif">
+            <source srcset="{{ url_for('static',filename='img/logo_ipn-white.webp') }}" type="image/webp">
+            <img src="{{ url_for('static',filename='img/min/logo_ipn-white.png') }}" type="image/png" alt="Logo IPN White">
+        </picture>
+        {% if errors_flag %}
+            <div class="flash-errors">
+                {% for msg in get_flashed_messages() %}
+                    {% for i in msg %}
+                    <span>{{ i }}</span>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        {% endif %}
+        <form method="post" class="register__form" id="register__form">
+            <!-- FULLNAME -->
+            <div class="register__form-group">
+                <label for="register_input-fullname" class="register__form-group__label" id="register_label-fullname">Nombre Completo</label>
+                <input type="text" class="register__form-group__input" id="register_input-fullname" name="fullname" placeholder="Escribe tu nombre..." required>
+                <span id="fullname-error">El nombre no debe llevar números ni carácteres especiales</span>
+            </div>
+            <!-- USER -->
+            <div class="register__form-group">
+                <label for="register_input-user" class="register__form-group__label" id="register_label-user">Nombre de Usuario</label>
+                <input type="text" class="register__form-group__input" id="register_input-user" name="user" placeholder="Escribe tu usuario..." required>
+                <span id="user-error">El nombre de usuario debe contener entre 6 y 24 caracteres sin espacios ni carácteres especiales</span>
+            </div>
+            <!-- EMAIL -->
+            <div class="register__form-group">
+                <label for="register_input-email" class="register__form-group__label" id="register_label-email">E-mail</label>
+                <input type="email" class="register__form-group__input" id="register_input-email" name="email" placeholder="Escribe tu correo..." required>
+                <span id="email-error">El correo no es válido.</span>
+            </div>
+            <!-- PASSWORD -->
+            <div class="register__form-group">
+                <label for="register_input-pass" class="register__form-group__label" id="register_label-pass">Contraseña</label>
+                <input type="password" class="register__form-group__input" id="register_input-pass" name="pass" placeholder="Escribe tu contraseña..." minlength="8" maxlength="24" required>
+                <span id="pass-error">Tus contraseñas no coinciden.</span>
+            </div>
+            <!-- CONFIRM PASSWORD -->
+            <div class="register__form-group">
+                <label for="register_input-passconfirm" class="register__form-group__label" id="register_label-passconfirm">Confirmar Contraseña</label>
+                <input type="password" class="register__form-group__input" id="register_input-passconfirm" placeholder="Escribe tu contraseña..." required>
+                <span id="passconfirm-error">Tus contraseñas no coinciden.</span>
+            </div>
+            <!-- GENRE -->
+            <div class="register__form-group">
+                <div class="group__genre">
+                    <input type="radio" name="radio-genre" id="option-male" class="radio" value="Male">
+                    <label for="option-male"><i class="radio-label fas fa-venus"></i></label>
+                    <input type="radio" name="radio-genre" id="option-female" class="radio" value="Female">
+                    <label for="option-female"><i class="radio-label fas fa-mars"></i></label>
+                    <input type="radio" name="radio-genre" id="option-other" class="radio" value="Other">
+                    <label for="option-other"><i class="radio-label fas fa-transgender"></i></label>
+                </div>
+                <input type="hidden" name="genre" id="genre">
+            </div>
+            <!-- DAY OF BIRTH -->
+            <div class="register__form-group">
+                <label for="register_input-birth">Fecha de Nacimiento</label>
+                <input type="date" name="register_input-birth" id="register_input-birth" class="register__form-group__input" required>
+                <input type="hidden" name="birth" id="birth">
+            </div>
+            <!-- CATEGORY -->
+            <div class="register__form-group">
+                <div class="group__category">
+                    <label for="register_category" id="register_category-label">
+                        <div id="list_category">
+                            <a href="#">Alumno</a>
+                            <a href="#">Profesor</a>
+                            <a href="#">Profesional Colaborador</a>
+                        </div>
+                        <span>-- Selecciona --</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </label>
+                    <input type="hidden" name="register_category" id="register_category" value="nothing"/>
+                </div>
+            </div>
+            <!-- TERMS & CONDITIONS -->
+            <div class="register__form-group">
+                <div class="group__terms">
+                    <input type="checkbox" class="checkbox" name="condition_terms" id="condition_terms">
+                    <label for="condition_terms">Términos y Condiciones</label>
+                </div>
+                <div class="group__terms">
+                    <input type="checkbox" class="checkbox" name="privacity_terms" id="privacity_terms">
+                    <label for="privacity_terms">Términos de Privacidad</label>
+                </div>
+            </div>
+            <!-- BUTTONS -->
+            <div class="register__form-buttons">
+                <button type="submit" class="register__form-btn btn register__form-btn1">
+                    <span>¡Listo!</span>
+                    <svg>
+                        <rect x="0" y="0" fill="none"></rect>
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="{{ url_for('static',filename='js/register.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block title %} PruebasAdmin1234 {% endblock %}
+
+{% block content %}
+{% if x == 'all' %}
+<div class="listado">
+    <h1>SELECT</h1>
+    {% for i in data %}
+        <a href="#" style="display: block;padding: 2rem;">{{ i.id, i.username, i.created_at }}</a>
+    {% endfor %}
+</div>
+<div class="insert">
+    <h1>INSERT</h1>
+    <form action="#" method="post">
+        <input type="text" name="i2" id="i2" value="i2">
+        <input type="text" name="i3" id="i3" value="i3">
+        <input type="text" name="i4" id="i4" value="4">
+        <input type="text" name="i5" id="i5" value="i5">
+        <input type="text" name="i6" id="i6" value="i6">
+        <input type="text" name="i7" id="i7" value="i7">
+        <input type="text" name="i8" id="i8" value="1010">
+        <input type="text" name="i9" id="i9" value="1">
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+<div class="update">
+    <h1>UPDATE</h1>
+    <form action="#" method="post">
+        <input type="text" name="i1" id="i1" value="3">
+        <input type="text" name="i2" id="i2" value="i2">
+        <input type="text" name="i3" id="i3" value="i3">
+        <input type="text" name="i4" id="i4" value="4">
+        <input type="text" name="i5" id="i5" value="i5">
+        <input type="text" name="i6" id="i6" value="i6">
+        <input type="text" name="i7" id="i7" value="i7">
+        <input type="text" name="i8" id="i8" value="1010">
+        <input type="text" name="i9" id="i9" value="1">
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+<div class="delete">
+    <h1>DELETE</h1>
+    <form action="#" method="post">
+        <input type="text" name="i1" id="i1" value="3">
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+<div class="prueba-img">
+    <style>
+        .prueba-img {
+            position: relative;
+            width: 100%;
+        }
+        .prueba-img img {
+            width: 100%;
+        }
+        .prueba-img .blur {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            /* background: rgba(197, 14, 54, 0.4); */
+            background: rgba(0, 0, 0, 0.59);
+            /* backdrop-filter: blur(1px); */
+        }
+        .prueba-img .content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .prueba-img .content h1 {
+            font-size: 5rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .prueba-img .content img {
+            max-width: 8rem;
+        }
+    </style>
+    <img src="{{ url_for('static',filename='img/header-image-ipn.jpg') }}" alt="" id="a123">
+    <div class="blur"></div>
+    <div class="content">
+        <h1>TITULO EJEMPLO</h1>
+        <img src="{{ url_for('static',filename='img/logo_burrito.webp') }}" alt="">
+    </div>
+</div>
+{% elif x == 'hola' %}
+<a href="#">Hola</a>
+{% elif x == 'adios' %}
+<a href="#">Adiós</a>
+{% else %}
+<a href="#">Ninguna se cumplió</a>
+{% endif %}
+{% endblock %}

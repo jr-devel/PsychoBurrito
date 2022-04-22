@@ -1,0 +1,47 @@
+@use 'variables' as v;
+
+@mixin cellphone() {
+    @media (max-width: v.$cellphone){
+        @content;
+    }
+}
+
+@mixin cellphoneXL() {
+    @media (max-width: v.$cellXL){
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media (max-width: v.$tablet){
+        @content;
+    }
+}
+
+@mixin desktop() {
+    @media (max-width: v.$desktop){
+        @content;
+    }
+}
+
+@mixin desktopXL() {
+    @media (max-width: v.$desktopXL){
+        @content;
+    }
+}
+
+// Grid
+@mixin grid($col, $gap: 0) {
+    display: grid;
+    grid-template-columns: repeat($col, 1fr);
+    padding: 5rem 0;
+    gap: $gap;
+}
+
+//
+@mixin reset-list {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+}

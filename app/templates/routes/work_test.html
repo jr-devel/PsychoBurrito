@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %} Orientación Académica {% endblock %}
+
+{% block content %}
+<div class="content-work_test">
+    <div class="work_test">
+        <form class="test-form" method="get">
+            <h3 id="question_number"></h3>
+            <p id="question_text"></p>
+            <div id="group__answers">
+                <span id="answerA" class="answers"></span>
+                <span id="answerB" class="answers"></span>
+                <span id="answerC" class="answers"></span>
+                <span id="answerD" class="answers"></span>
+                <span id="answerE" class="answers"></span>
+            </div>
+            <button type="submit" class="btn" id="next_question"><span id="next_question-txt">Siguiente</span><svg><rect x="0" y="0" fill="none"></rect></svg></button>
+        </form>
+        <div id="extra">
+            <span id="note"></span>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="{{ url_for('static',filename='js/work_test.js') }}"></script>
+{% endblock %}

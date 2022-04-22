@@ -1,0 +1,121 @@
+@use 'variables' as v;
+
+html {
+    font-size: 62.5%;
+    //---------------------
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    outline: none;
+    user-select: none;
+}
+
+body {
+    font-family: v.$font_PT;
+    font-size: 1.6rem;
+    &.body-fixed {
+        overflow: hidden;
+    }
+    @media (min-width: v.$cellphone) {
+        &.body-scroll {
+            padding-top: 0px;
+        }
+    }
+    &::-webkit-scrollbar {
+        max-width: 10px;
+        background: v.$wine;
+    }
+    &::-webkit-scrollbar-thumb {
+        width: 100%;
+        background: #aaa;
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+    }
+}
+h1,h2,h3,h4 {
+    margin: 0 0 5rem 0;
+    font-family: v.$font-PT;
+}
+h1 { font-size: 4rem }
+h2 { font-size: 3.6rem }
+h3 { font-size: 3rem }
+h4 { font-size: 2.6rem }
+p {
+    font-size: 2rem;
+    color: v.$black;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+    font-family: v.$font-PT;
+}
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+input.input-correct {
+    border-bottom: v.$white;
+    color: v.$white;
+}
+input.input-error {
+    border-bottom: v.$pink;
+    color: v.$pink;
+}
+label.label-correct {
+    color: v.$white;
+}
+label.label-error {
+    color: v.$pink;
+}
+
+.disfocus {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+}
+
+#fullname-error,
+#user-error,
+#email-error,
+#passconfirm-error,
+#pass-error,
+#input-error {
+    display: none;
+    width: 100%;
+    margin-top: 1rem;
+    color: #d00;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#proximamente {
+    background: rgba(0, 0, 0, 0.02);
+    backdrop-filter: blur(2px);
+    width: min(90%, 50rem);
+    padding: 3rem;
+    h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 5rem;
+        color: #333;
+        font-weight: 400;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        color: #333;
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="psychology,psicología,ayuda,ansiedad,depresión,psicoburrito,psico,psycho,ipn,poli,cecyt12">
+    <meta name="author" content="Equipo de Proptotipos - Instituto Politécnico Nacional">
+    <meta name="authors" content="Juan Diego Rico Espluga,Oscar Mauricio Zacarias Ibarra,Yael Yetlanezi Mendoza Sánchez,Luis x x">
+    <meta name="description" content="PsycoBurrito es el proyecto que brindará a toda la comunidad politécnica la ayuda necesaria para tratar padecimientos tales como la ansiedad, el estrés, depresión, bajo autoestima, entre otros.\nEste nuevo método de apoyo emocional, en caso de ser necesario, te dará la posibilidad de tener pláticas o sesiones de terapia con un profesional de la salud mental de manera inmediata.\nAdemás en nuestro sitio/aplicación web tenemos secciones donde explicamos y hablamos sobre los problemas más frecuentes en estudiantes y profesionales para que todos los que integran la comunidad politécnica tengan acceso a estas herramientas tan importantes.\nIncluso, en caso de no querer hablar con una persona especializada, hemos estado trabajando en 'Burrito' nuestro ChatBot especializado en ciencias de la salud mental que podrá entablar una conversación Humano - Robot y estará 24/7 siempre que necesites de su ayuda.">
+    <!-- <meta name="description" content="{{ web_description }}"> -->
+    <title>PsicoBurrito | {% block title %}{% endblock %}</title>
+    <!-- ICON -->
+    <link rel="shortcut icon" href="{{ url_for('static',filename='img/icons/logopoli2.ico') }}" type="image/x-icon">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&family=Libre+Barcode+128+Text&family=Lobster&family=Open+Sans&family=PT+Sans:wght@400;700&family=Press+Start+2P&family=Roboto:wght@100;900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/897a6024ea.js" crossorigin="anonymous"></script>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+    <!-- BASE CONTENT -->
+    <div class="navbar">{% include 'navbar.html' %}</div>
+    <div class="content">
+        <div class="particles" id="particles-js"></div>
+        {% block content %}{% endblock %}
+    </div>
+    <div class="footer">{% include 'footer.html' %}</div>
+    <!-- SCRIPTS -->
+    <script src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/modernizr.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/navbar.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/index.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/particles.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/particles_creator.js') }}"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    {% block script %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% block title %} Inicio {% endblock %}
+
+{% block content %}
+<div class="content-index">
+    {% if not g.user %}
+    <div class="login">
+        <picture>
+            <img src="{{ url_for('static',filename='img/logo_ipn-white.png') }}" alt="IMG Deafult User (.PNG)">
+        </picture>
+        <form method="post" class="login__form" id="login__form">
+            <div class="login__form-group">
+                <label for="login_username" class="login__form-group__label" id="login_label-user">Nombre de Usuario</label>
+                <input type="text" class="login__form-group__input" id="login_input-user" name="user" placeholder="Escribe tu nombre...">
+            </div>
+            <div class="login__form-group">
+                <label for="login_password" class="login__form-group__label" id="login_label-pass">Contraseña</label>
+                <input type="password" class="login__form-group__input" id="login_input-pass" name="pass" placeholder="Escribe tu contraseña...">
+            </div>
+            <div class="login__form-buttons">
+                <button type="submit" class="login__form-btn btn login__form-btn1">
+                    <span>Iniciar Sesión</span>
+                    <svg>
+                        <rect x="0" y="0" fill="none"></rect>
+                    </svg>
+                </button>
+                <a href="/register" class="login__form-btn btn login__form-btn2">
+                    <span>Crear Cuenta</span>
+                    <svg>
+                        <rect x="0" y="0" fill="none"></rect>
+                    </svg>
+                </a>
+            </div>
+            <div class="login__form-forgot_pass">
+                <a href="#">¿Has olvidado tu nombre de usuario?</a>
+                <a href="#">¿Has olvidado tu contraseña?</a>
+            </div>
+        </form>
+    </div>
+    {% endif %}
+    <div class="alert">
+        <div class="panic-button">
+            <div class="circle-contour">
+                <div class="circle-button">
+                    <span>¡AYUDA!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <h3>
+            <span>Menú</span>
+        </h3>
+        <ul>
+            <li><a href="#">Conoce a PsycoBurrito</a></li>
+            <li><a href="#">Orientación académica</a></li>
+            <li><a href="#">Contactar a un Psicólogo</a></li>
+            <li><a href="#">¿Qué es la Ansiedad?</a></li>
+            <li><a href="#">¿Qué es la Depresión?</a></li>
+            <li><a href="#">Más Información</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content-index">
+    <div class="banner">
+        <p>{{ web_description[0:-258] }}... <a href="/about">Ver más</a></p>
+    </div>
+</div>
+<div class="content-index">
+    <div class="index__links" id="index__links"></div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+(function(){
+
+const index_links = document.getElementById('index__links');
+const titles = [
+    "Conoce más sobre la ansiedad",
+    "Conoce más sobre la depresión",
+    "Conoce más sobre la agresividad",
+    "Realiza un test vocacional",
+]
+const texts = [
+    "Preocupación y miedo intensos, excesivos y continuos ante situaciones cotidianas. Es posible que se produzca...",
+    "Grupo de afecciones asociadas a los cambios de humor de una persona, como la depresión o el trastorno..",
+    "La agresividad es un estado emocional que consiste en sentimientos de odio y deseos de dañar a...",
+    "Tenemos un test que te ayudará a orientarte a la hora de tomar una elección al elegir una carrera.",
+]
+const links = [
+    "/information",
+    "/information",
+    "/information",
+    "/work_test",
+]
+function show_links(title,text,link){
+    item = `<div class="item"><div class="item-info"><h3>${title}</h3><p>${text}</p></div><div class="item-btn"><a href="${link}" class="btn fas fa-arrow-right"></a></div></div>`;
+    index_links.innerHTML += item;
+}
+for (let i = 0; i < 4; i++) {
+    let title = titles[i];
+    let text = texts[i];
+    let link = links[i];
+    show_links(title,text,link);
+}
+
+}());
+</script>
+{% endblock %}

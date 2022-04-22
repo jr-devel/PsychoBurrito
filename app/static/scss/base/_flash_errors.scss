@@ -1,0 +1,19 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.flash-errors {
+    background: #d00;
+    border: none;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    span {
+        display: block;
+        width: 100%;
+        font-family: 'Inconsolata','Roboto',sans-serif;
+        font-weight: 400;
+        font-size: 1.4rem;
+        color: #fff;
+    }
+}

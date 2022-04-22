@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %} Conócenos {% endblock %}
+
+{% block content %}
+<div class="content-about">
+    <div class="about">
+        <div class="about__description">
+            <div class="image">
+                <picture>
+                    <source srcset="{{ url_for('static',filename='img/logo_ipn.avif') }}" type="image/avif">
+                    <source srcset="{{ url_for('static',filename='img/logo_ipn.webp') }}" type="image/webp">
+                    <img loading="lazy" src="{{ url_for('static',filename='img/min/logo_ipn.png') }}" type="image/png" alt="Logo IPN">
+                </picture>
+            </div>
+            <div class="text">
+                <h2>¿Qué es PsycoBurrito?</h2>
+                <p>{{ web_description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

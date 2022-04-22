@@ -1,0 +1,209 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.content-login {
+    width: 100%;
+    height: 100%;
+    padding: 10% 5%;
+}
+.content-login .login {
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.95);
+    width: min(90%,40rem);
+    padding-top: 1.5rem;
+    border-radius: 1rem;
+    @include m.tablet {
+        margin: 0 auto;
+    }
+    picture img {
+        display: block;
+        margin: 1rem auto;
+        max-width: 12rem;
+        max-height: 20rem;
+    }
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem;
+    .login__form-group {
+        width: 100%;
+        margin: 1.5rem auto;
+        //
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        label {
+            width: 100%;
+            padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+            color: #fff;
+        }
+        input {
+            width: min(100%, 120rem);
+            margin: 0;
+            padding: 1.5rem;
+            //
+            background: transparent;
+            border: none;
+            border-bottom: 0.4rem solid #fff;
+            //
+            text-align: center;
+            text-align-last: center;
+            color: #fff;
+            &::placeholder {
+                color: #aaa;
+            }
+            &:focus {
+                background: linear-gradient(
+                    to top,
+                    #777 0% 0.5%,
+                    transparent 10% 30%,
+                    transparent 30% 100%
+                );
+            }
+            &.error:focus {
+                background: linear-gradient(
+                    to top,
+                    #d00 0% 0.5%,
+                    transparent 10% 30%,
+                    transparent 30% 100%
+                );
+            }
+        }
+    }
+    .login__form-buttons {
+        width: 100%;
+        .btn {
+            display: block;
+            width: 100%;
+            //
+            background: v.$wine;
+            color: #fff;
+            margin: 1.5rem auto;
+            padding: 1rem;
+            //
+            text-align: center;
+            border-radius: 0.5rem;
+            &:hover {
+                background: #000;
+            }
+            &:nth-child(1) {
+                background: #fff;
+                color: #333;
+                &:hover {
+                    background: #000;
+                }
+            }
+        }
+    }
+    .login__form-forgot_pass {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        a {
+            display: block;
+            font-size: 1.0rem;
+            color: #fff;
+            &:hover {
+                color: #ccc;
+            }
+        }
+    }
+}
+.login__form-btn1 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    span {
+        position: relative;
+        // z-index: 2;
+        transition: .3s ease all;
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        fill: none;
+        rect {
+            width: 100%;
+            height: 100%;
+            stroke: rgb(97, 14, 25);
+            stroke-width: 10px;
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            transition: .6s ease all;
+        }
+    }
+    &:hover {
+        background: #000;
+        span {
+            color: #fff;
+        }
+        svg rect {
+            stroke-dashoffset: 0;
+        }
+    }
+}
+.login__form-btn2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    span {
+        position: relative;
+        // z-index: 2;
+        transition: .3s ease all;
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        fill: none;
+        rect {
+            width: 100%;
+            height: 100%;
+            stroke: rgb(255, 255, 255);
+            stroke-width: 10px;
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            transition: .6s ease all;
+        }
+    }
+    &:hover {
+        background: #000;
+        span {
+            color: #fff;
+        }
+        svg rect {
+            stroke-dashoffset: 0;
+        }
+    }
+}

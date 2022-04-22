@@ -1,0 +1,26 @@
+<header class="header">
+    <div class="navbar-filter"></div>
+    {% if g.user %}
+        <span id="logged_user"><i class="fas fa-user"></i>&nbsp;&nbsp;{{ g.user['username'] }} | {{ g.user['user_fullname'] }}</span>
+    {% endif %}
+    <nav class="header__nav">
+        <div class="dropmenu-box">
+            <button type="button" id="dropmenu" readonly="menu">
+                <span><i class="fas fa-bars"></i>&nbsp;&nbsp; Menu</span>
+            </button>
+        </div>
+        <ul class="dropmenu-disable" id="nav_menu">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/about">Contacto</a></li>
+            {% if not g.user %}
+                <li><a href="/login">Iniciar Sesión</a></li>
+            {% else %}
+                <li><a href="/profile">Perfil</a></li>
+            {% endif %}
+            <li><a href="/about">Conócenos</a></li>
+            <li><a href="/work_test">Orientación Académica</a></li>
+            <li><a href="#">Información</a></li>
+            <li><a href="#">Contactar a un Psicólogo</a></li>
+        </ul>
+    </nav>
+</header>

@@ -1,0 +1,56 @@
+<footer class="foo">
+        <div class="foo__ipn">
+                <picture>
+                        <source srcset="{{ url_for('static',filename='img/logo_ipn-white.avif') }}" type="image/avif">
+                        <source srcset="{{ url_for('static',filename='img/logo_ipn-white.webp') }}" type="image/webp">
+                        <img loading="lazy" src="{{ url_for('static',filename='img/min/logo_ipn-white.png') }}" type="image/png" alt="Logo IPN">
+                </picture>
+        </div>
+        <div class="foo__complaints">
+                <h3>Quejas y Sugerencias</h3>
+                <picture>
+                        <source srcset="{{ url_for('static',filename='img/white-icon_mail.avif') }}" type="image/avif">
+                        <source srcset="{{ url_for('static',filename='img/white-icon_mail.webp') }}" type="image/webp">
+                        <img loading="lazy" src="{{ url_for('static',filename='img/min/white-icon_mail.png') }}" type="image/png" alt="Complaints IMG">
+                </picture>
+                <a href="mailto:IPN-CORREO">
+                        <i class="fas fa-clipboard-check"></i>
+                        <span>correo@correo.com</span>
+                </a>
+                <a href="tel:5566667777">
+                        <i class="fas fa-mobile"></i>
+                        <span>(+52) 55 6666 7777</span>
+                </a>
+        </div>
+        <div class="foo__socials">
+                <a href="https://www.facebook.com/profile.php?id=100079446507598" class="foo__socials-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 225 225" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,225.98438v-225.98437h225.98438v225.98438z" fill="none"></path><g><path d="M112.5,23.4375c-49.18786,0 -89.0625,39.87464 -89.0625,89.0625c0,49.18786 39.87464,89.0625 89.0625,89.0625c49.18786,0 89.0625,-39.87464 89.0625,-89.0625c0,-49.18786 -39.87464,-89.0625 -89.0625,-89.0625z" fill="#146699"></path><path d="M124.55625,136.10625h23.04844l3.61875,-23.41406h-26.67188v-12.79687c0,-9.72656 3.17813,-18.35156 12.27656,-18.35156h14.62031v-20.43281c-2.56875,-0.34688 -8.00156,-1.10625 -18.26719,-1.10625c-21.43594,0 -34.00312,11.32031 -34.00312,37.11094v15.57656h-22.03594v23.41406h22.03594v64.35469c4.36406,0.65625 8.78437,1.10156 13.32187,1.10156c4.10156,0 8.10469,-0.375 12.05625,-0.90938z" fill="#ffffff"></path></g></g></svg>
+                </a>
+                <a href="https://twitter.com/BurritoPsyco" class="foo__socials-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 225 225" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,225.98438v-225.98437h225.98438v225.98438z" fill="none"></path><g><path d="M112.5,18.75c-51.7767,0 -93.75,41.9733 -93.75,93.75c0,51.7767 41.9733,93.75 93.75,93.75c51.7767,0 93.75,-41.9733 93.75,-93.75c0,-51.7767 -41.9733,-93.75 -93.75,-93.75z" fill="#5bcaff"></path><path d="M168.75,80.25c-4.13437,1.83281 -9.37031,3.55312 -14.0625,4.125c4.77187,-2.83125 12.34219,-8.72813 14.0625,-14.0625c-4.45781,2.62031 -12.52031,5.41875 -17.77969,6.43125c-4.2,-4.45312 -10.19063,-6.43125 -16.82812,-6.43125c-12.75,0 -21.64219,10.80469 -21.64219,23.4375v9.375c-18.75,0 -37.03125,-14.28281 -48.40781,-28.125c-2.00156,3.37969 -3.12656,7.33594 -3.12656,11.51719c0,8.52656 7.83281,17.17969 14.03437,21.29531c-3.78281,-0.11719 -10.94531,-3.00469 -14.0625,-4.6875c0,0.075 0,0.16875 0,0.26719c0,11.09531 7.78594,18.62812 18.3375,20.72813c-1.92656,0.52969 -4.275,2.44219 -13.3125,2.44219c2.93438,9.07031 17.68594,13.86562 27.7875,14.0625c-7.90313,6.12656 -21.99375,9.375 -32.8125,9.375c-1.87031,0 -2.88281,0.10313 -4.6875,-0.10781c10.20938,6.46875 24.46875,9.48281 37.5,9.48281c42.45469,0 65.625,-32.42812 65.625,-62.67187c0,-0.99375 -0.03281,-4.32188 -0.08437,-5.29687c4.5375,-3.19688 6.375,-6.54375 9.45937,-11.15625" fill="#ffffff"></path></g></g></svg>
+                </a>
+                <a href="https://www.instagram.com/psycoburrito" class="foo__socials-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 225 225" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,225.98438v-225.98437h225.98438v225.98438z" fill="none"></path><g fill="#ff0787"><path d="M112.5,15c-53.76,0 -97.5,43.74 -97.5,97.5c0,53.76 43.74,97.5 97.5,97.5c53.76,0 97.5,-43.74 97.5,-97.5c0,-53.76 -43.74,-97.5 -97.5,-97.5zM87.49512,45h49.99511c23.4375,0 42.50977,19.06512 42.50977,42.49512v49.99511c0,23.4375 -19.06512,42.50977 -42.49512,42.50977h-49.99511c-23.4375,0 -42.50977,-19.06512 -42.50977,-42.49512v-49.99511c0,-23.4375 19.06512,-42.50977 42.49512,-42.50977zM87.49512,60c-15.1575,0 -27.49512,12.34477 -27.49512,27.50977v49.99511c0,15.1575 12.34477,27.49512 27.50977,27.49512h49.99511c15.1575,0 27.49512,-12.34477 27.49512,-27.50977v-49.99511c0,-15.1575 -12.34477,-27.49512 -27.50977,-27.49512zM147.50977,72.49512c2.76,0 4.99511,2.23512 4.99511,4.99512c0,2.76 -2.23511,5.00977 -4.99511,5.00977c-2.76,0 -5.00977,-2.24977 -5.00977,-5.00977c0,-2.76 2.24977,-4.99512 5.00977,-4.99512zM112.5,75c20.6775,0 37.5,16.8225 37.5,37.5c0,20.6775 -16.8225,37.5 -37.5,37.5c-20.6775,0 -37.5,-16.8225 -37.5,-37.5c0,-20.6775 16.8225,-37.5 37.5,-37.5zM112.5,90c-12.42641,0 -22.5,10.07359 -22.5,22.5c0,12.42641 10.07359,22.5 22.5,22.5c12.42641,0 22.5,-10.07359 22.5,-22.5c0,-12.42641 -10.07359,-22.5 -22.5,-22.5z"></path></g></g></svg>
+                </a>
+                <a href="https://www.youtube.com/channel/UCIxBHAl-5CvXseFnalrarnw" class="foo__socials-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 225 225" style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,225.98438v-225.98437h225.98438v225.98438z" fill="none"></path><path d="M112.99219,214.24219c-55.91883,0 -101.25,-45.33117 -101.25,-101.25v0c0,-55.91883 45.33117,-101.25 101.25,-101.25v0c55.91883,0 101.25,45.33117 101.25,101.25v0c0,55.91883 -45.33117,101.25 -101.25,101.25z" fill="#e80303"></path><g id="original-icon" fill="#ffffff"><path d="M177.3769,77.97843c-1.30997,-7.23052 -7.55159,-12.49609 -14.79496,-14.13997c-10.83936,-2.29887 -30.89989,-3.94275 -52.6043,-3.94275c-21.69157,0 -42.07316,1.64388 -52.92537,3.94275c-7.23052,1.64388 -13.48499,6.57554 -14.79496,14.13997c-1.32281,8.21942 -2.63278,19.72661 -2.63278,34.52157c0,14.79496 1.30997,26.30215 2.95386,34.52157c1.32281,7.23052 7.56444,12.49609 14.79496,14.13997c11.50719,2.29887 31.2338,3.94275 52.93821,3.94275c21.70441,0 41.43102,-1.64388 52.93821,-3.94275c7.23052,-1.64388 13.47214,-6.57554 14.79496,-14.13997c1.30997,-8.21942 2.95385,-20.06052 3.28777,-34.52157c-0.66783,-14.79496 -2.31171,-26.30215 -3.9556,-34.52157zM92.22883,135.51438v-46.02876l40.10821,23.01438z"></path></g></g></g></svg>
+                </a>
+        </div>
+        <div class="foo__terms">
+                <a href="#">Políticas de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Políticas de Seguridad</a>
+        </div>
+        <div class="foo__support">
+                <h3>Soporte Técnico</h3>
+                <picture>
+                        <source srcset="{{ url_for('static',filename='img/white-icon_support.avif') }}" type="image/avif">
+                        <source srcset="{{ url_for('static',filename='img/white-icon_support.webp') }}" type="image/webp">
+                        <img loading="lazy" src="{{ url_for('static',filename='img/min/white-icon_support.png') }}" type="image/png" alt="Support IMG">
+                </picture>
+                <a href="#">
+                        <span>info@site.com</span>
+                        <i class="fas fa-wrench"></i>
+                </a>
+        </div>
+</footer>
