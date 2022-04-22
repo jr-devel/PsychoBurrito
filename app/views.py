@@ -18,8 +18,8 @@ bp = Blueprint('views',__name__, url_prefix='/')
 def index():
     return render_template('routes/index.html', web_description=web_description)
 
-@bp.route('information')
-@bp.route('information')
+@bp.route('/information')
+@bp.route('/information')
 def information():
     return render_template('routes/information.html',
         web_description    = web_description,
@@ -47,8 +47,8 @@ def about():
 def work_test():
     return render_template('routes/work_test.html', web_description=web_description)
 
-@bp.route('profile')
-@bp.route('perfil')
+@bp.route('/profile')
+@bp.route('/perfil')
 @login_required
 def profile():
     return render_template('authentication/profile.html', web_description=web_description)
