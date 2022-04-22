@@ -59,82 +59,82 @@ function genre_selector_aux(value) {document.getElementById('genre').setAttribut
 //------------------------------------------------------------------------------------------------------//
 //------------------------------------------------------------------------------------------------------//
 //------------------------------------------------------------------------------------------------------//
-const registerValidation = () => {
-    const formulary  = document.getElementById('register__form');
-    const inputs     = document.querySelectorAll('.register__form-group input');
-    const regex      = {
-        user: /^[a-zA-Z0-9\_\-]{6,12}/g,
-        pass: /^.{8,24}/g,
-        name: /^[a-zA-ZÀ-ÿ\s]{6,64}/g,
-        mail: /^[a-zA-Z0-9\.\_\-]+@+[a-zA-Z0-9\_\-\.]+\.[a-zA-Z0-9\_\.\-]/g
-    };
-    const fields     = {
-        user: false,
-        pass: false,
-        fullname: false,
-        email: false
-    };
+// const registerValidation = () => {
+//     const formulary  = document.getElementById('register__form');
+//     const inputs     = document.querySelectorAll('.register__form-group input');
+//     const regex      = {
+//         user: /^[a-zA-Z0-9\_\-]{6,12}/g,
+//         pass: /^.{8,24}/g,
+//         name: /^[a-zA-ZÀ-ÿ\s]{6,64}/g,
+//         mail: /^[a-zA-Z0-9\.\_\-]+@+[a-zA-Z0-9\_\-\.]+\.[a-zA-Z0-9\_\.\-]/g
+//     };
+//     const fields     = {
+//         user: false,
+//         pass: false,
+//         fullname: false,
+//         email: false
+//     };
+//     //
+document.getElementById('register_input-pass').addEventListener('keyup', password_validation);
+document.getElementById('register_input-passconfirm').addEventListener('keyup', password_validation);
+function password_validation() {
+    const password         = document.getElementById('register_input-pass');
+    const password_confirm = document.getElementById('register_input-passconfirm');
     //
-    document.getElementById('register_input-pass').addEventListener('keyup', password_validation);
-    document.getElementById('register_input-passconfirm').addEventListener('keyup', password_validation);
-    function password_validation() {
-        const password         = document.getElementById('register_input-pass');
-        const password_confirm = document.getElementById('register_input-passconfirm');
+    if ( password.value != password_confirm.value ) {
+        password.classList.add('error');
+        password_confirm.classList.add('error');
+        document.getElementById('pass-error').style.display = 'inline-block';
+        document.getElementById('passconfirm-error').style.display = 'inline-block';
         //
-        if ( password.value != password_confirm.value ) {
-            password.classList.add('error');
-            password_confirm.classList.add('error');
-            document.getElementById('pass-error').style.display = 'inline-block';
-            document.getElementById('passconfirm-error').style.display = 'inline-block';
-            //
-            fields['pass'] = false;
-        } else {
-            password.classList.remove('error');
-            password_confirm.classList.remove('error');
-            document.getElementById('pass-error').style.display = 'none';
-            document.getElementById('passconfirm-error').style.display = 'none';
-            //
-            fields['pass'] = true;
-        }
+        fields['pass'] = false;
+    } else {
+        password.classList.remove('error');
+        password_confirm.classList.remove('error');
+        document.getElementById('pass-error').style.display = 'none';
+        document.getElementById('passconfirm-error').style.display = 'none';
+        //
+        fields['pass'] = true;
     }
-    function field_validation(regex, input, field, flag=true) {
-        if ( regex.test(input.value) && flag === true ){
-            document.getElementById(`register_input-${field}`).classList.remove('error');
-            document.getElementById(`register_input-${field}`).style.borderColor = '#fff';
-            document.getElementById(`register_input-${field}`).style.borderColor = '#fff';
-            document.getElementById(`${field}-error`).style.display = 'none';
-            fields[field] = true;
-            flag = false;
-        } else {
-            document.getElementById(`register_input-${field}`).classList.add('error');
-            document.getElementById(`register_input-${field}`).style.borderColor = '#a00';
-            document.getElementById(`register_input-${field}`).style.borderColor = '#a00';
-            document.getElementById(`${field}-error`).style.display = 'inline-block';
-            fields[field] = false;
-            flag = true;
-        }
-    }
-    function form_validation(e) {
-        switch (e.target.name) {
-            case 'fullname':
-                field_validation(regex.name, e.target, 'fullname');
-                break;
-            case 'user':
-                field_validation(regex.user, e.target, 'user');
-                break;
-            case 'email':
-                field_validation(regex.mail, e.target, 'email');
-                break;
-            default: break;
-        }
-    }
-    inputs.forEach( input => {
-        input.addEventListener('keyup', form_validation);
-        input.addEventListener('blur', form_validation);
-    })
-    formulary.addEventListener('submit', e => {
-        if (!fields.name && !fields.user && !fields.email && !fields.pass) {
-            e.preventDefault();
-        }
-    });
 }
+//     function field_validation(regex, input, field, flag=true) {
+//         if ( regex.test(input.value) && flag === true ){
+//             document.getElementById(`register_input-${field}`).classList.remove('error');
+//             document.getElementById(`register_input-${field}`).style.borderColor = '#fff';
+//             document.getElementById(`register_input-${field}`).style.borderColor = '#fff';
+//             document.getElementById(`${field}-error`).style.display = 'none';
+//             fields[field] = true;
+//             flag = false;
+//         } else {
+//             document.getElementById(`register_input-${field}`).classList.add('error');
+//             document.getElementById(`register_input-${field}`).style.borderColor = '#a00';
+//             document.getElementById(`register_input-${field}`).style.borderColor = '#a00';
+//             document.getElementById(`${field}-error`).style.display = 'inline-block';
+//             fields[field] = false;
+//             flag = true;
+//         }
+//     }
+//     function form_validation(e) {
+//         switch (e.target.name) {
+//             case 'fullname':
+//                 field_validation(regex.name, e.target, 'fullname');
+//                 break;
+//             case 'user':
+//                 field_validation(regex.user, e.target, 'user');
+//                 break;
+//             case 'email':
+//                 field_validation(regex.mail, e.target, 'email');
+//                 break;
+//             default: break;
+//         }
+//     }
+//     inputs.forEach( input => {
+//         input.addEventListener('keyup', form_validation);
+//         input.addEventListener('blur', form_validation);
+//     })
+//     formulary.addEventListener('submit', e => {
+//         if (!fields.name && !fields.user && !fields.email && !fields.pass) {
+//             e.preventDefault();
+//         }
+//     });
+// }
