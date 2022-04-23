@@ -5,19 +5,47 @@
 {% endblock%}
 
 {% block content %}
-<!-- <div class="content-profile">
+<div class="content-profile">
     <div class="profile">
+        <div class="user">
+            <span class="fas fa-user" id="user_icon"></span>
+            <h2 class="user_fullname">{{ g.user['user_fullname'] }}</h2>
+            <h4 class="username">{{ g.user['username'] }}</h4>
+            <div class="user_status">
+                <strong>Estado: </strong>
+                {% if g.user['user_status'] == 1 %}
+                    <span>Activo <i class="fas fa-circle" style="color: #393;"></i></span>
+                {% else %}
+                    <span>Baneado <i class="fas fa-radiation" style="color:#c90"></i></span>
+                {% endif %}
+            </div>
+            <div class="user_type">
+                <strong>Categoría: </strong>
+                {% if g.user['user_type'] == 1010 %}
+                    <span>Usuario Común</span>
+                {% elif g.user['user_type'] == 2010 %}
+                    <span>Estudiante</span>
+                {% elif g.user['user_type'] == 2020 %}
+                    <span>Profesor</span>
+                {% elif g.user['user_type'] == 3030 %}
+                    <span>Profesional Colaborador</span>
+                {% endif %}
+            </div>
+        </div>
         <aside class="profile_actions">
-            <a href="#">Enlace</a>
-            <a href="#">Enlace</a>
-            <a href="#">Enlace</a>
-            <a href="#">Enlace</a>
-            <a href="#">Enlace</a>
+            <a href="/logout">Cerrar Sesión</a>
+            <div></div>
+            <!-- <a href="#">Actualizar contraseña</a>
+            <a href="#">Actualizar nombre</a>
+            <a href="#">Actualizar nombre de usuario</a>
+            <a href="#">Actualizar correo</a>
+            <a href="#">Eliminar Cuenta</a> -->
+            <!-- <a href="#">Próximamente</a>
+            <a href="#">Próximamente</a>
+            <a href="#">Próximamente</a>
+            <a href="#">Próximamente</a>
+            <a href="#">Próximamente</a> -->
         </aside>
     </div>
-</div> -->
-<div id="proximamente">
-    <h3>PRÓXIMAMENTE</h3>
-    <p>Seguimos trabajando para que usted tenga una excelente experiencia en la plataforma. Gracias por su paciencia</p>
 </div>
 {% endblock %}

@@ -1,0 +1,79 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.content-profile {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.content-profile .profile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    @include m.desktop {
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem 0 0 0;
+    }
+    .user {
+        padding-left: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include m.desktop {
+            padding-left: 0;
+        }
+        #user_icon {
+            font-size: 6rem;
+            color: #888;
+            background: transparent;
+            backdrop-filter: blur(2px);
+            border: .4rem solid #888;
+            border-radius: 50%;
+            padding: 1.8rem 2rem;
+            margin-bottom: 3rem;
+        }
+        .user_fullname {
+            font-family: 'Roboto',sans-serif;
+            font-weight: 900;
+            color: #333;
+            margin-bottom: 0;
+        }
+        .username {
+            font-family: 'Roboto',sans-serif;
+            font-weight: 500;
+            font-size: 1.4rem;
+            background: #333;
+            color: #fff;
+            padding: 1rem 1.5rem;
+        }
+    }
+    aside.profile_actions {
+        max-width: 30rem;
+        min-height: 40rem;
+        @include m.desktop {
+            max-width: 70%;
+            width: 70%;
+            min-height: fit-content;
+            margin-top: 3.5rem;
+        }
+        a {
+            text-align: center;
+            background: v.$wine;
+            display: block;
+            margin: 1rem;
+            padding: 2rem;
+            color: #fff;
+            transition: all ease .5s;
+            &:hover {
+                background: #000;
+            }
+        }
+    }
+}
