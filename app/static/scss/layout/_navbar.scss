@@ -3,8 +3,9 @@
 
 .navbar {
     width: 100%;
-    height: 100vh;
-    background-image: url(../img/min/header-image-ipn2.jpg);
+    height: 10rem;
+    // background-image: url(../img/min/header-image-ipn2.jpg);
+    background: v.$guinda;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
