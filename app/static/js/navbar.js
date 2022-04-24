@@ -1,7 +1,6 @@
 function navbar_js() {
     navbar_fixed();
     nav_dropmenu();
-    change_logo();
 }
 
 function navbar_fixed() {
@@ -19,22 +18,6 @@ function navbar_fixed() {
                 body.classList.remove('body-scroll');
             }
         })
-    }
-}
-
-function change_logo() {
-    const nav_logo = document.getElementById('nav-main_logo');
-    const logo = document.querySelector('#main_logo');
-    //
-    if (window.innerWidth <= 500) {
-        const pic = document.createElement('picture');
-        pic.innerHTML = `
-            <source srcset="/static/img/logo_burrito.avif" type="image/avif">
-            <source srcset="/static/img/logo_burrito.webp" type="image/webp">
-            <img src="/static/img/min/logo_burrito.png" alt="IMG Burrito (.PNG)" class="item__img">
-        `;
-        //
-        logo.replaceWith(pic);
     }
 }
 
