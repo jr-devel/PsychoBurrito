@@ -34,6 +34,22 @@ def information():
         suicide            = suicide,
     )
 
+@bp.route('contactanos', methods=['GET','POST'])
+@bp.route('contact_us', methods=['GET','POST'])
+@bp.route('contact', methods=['GET','POST'])
+def contact():
+    return render_template('routes/contact.html',
+        web_description=web_description,
+    )
+
+@bp.route('contact_psychologist', methods=['GET','POST'])
+@bp.route('contactar_psicologo', methods=['GET','POST'])
+@bp.route('help_contact', methods=['GET','POST'])
+def help_contact():
+    return render_template('routes/help_contact.html',
+        web_description=web_description,
+    )
+
 @bp.route('/sobre_nosotros')
 @bp.route('/acerca_de')
 @bp.route('/conocenos')

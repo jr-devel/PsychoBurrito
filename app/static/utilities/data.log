@@ -4710,3 +4710,140 @@
 04:01:07 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:01:07] "[36mGET /static/img/logo_ipn-white.webp HTTP/1.1[0m" 304 -
 04:01:07 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:01:07] "[36mGET /static/img/white-icon_mail.webp HTTP/1.1[0m" 304 -
 04:01:07 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:01:07] "[36mGET /static/img/white-icon_support.webp HTTP/1.1[0m" 304 -
+04:07:30 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:07:30] "GET /information HTTP/1.1" 200 -
+04:07:31 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:07:31] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+04:07:31 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:07:31] "[36mGET /static/js/modernizr.js HTTP/1.1[0m" 304 -
+04:07:31 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:07:31] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+04:07:31 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:07:31] "[36mGET /static/js/particles_creator.js HTTP/1.1[0m" 304 -
+04:07:31 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:07:31] "[36mGET /static/js/particles.min.js HTTP/1.1[0m" 304 -
+04:07:31 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:07:31] "GET /static/js/navbar.js HTTP/1.1" 200 -
+04:07:31 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:07:31] "GET /static/css/style.css HTTP/1.1" 200 -
+04:07:31 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:07:31] "[36mGET /static/img/icons/logopoli2.ico HTTP/1.1[0m" 304 -
+04:08:09 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:08:09] "GET /information HTTP/1.1" 200 -
+04:08:09 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:08:09] "GET /static/css/style.css HTTP/1.1" 200 -
+04:08:09 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:08:09] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+04:08:09 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:08:09] "[36mGET /static/js/modernizr.js HTTP/1.1[0m" 304 -
+04:08:09 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:08:09] "[36mGET /static/js/navbar.js HTTP/1.1[0m" 304 -
+04:08:09 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:08:09] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+04:08:09 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:08:09] "[36mGET /static/js/particles.min.js HTTP/1.1[0m" 304 -
+04:08:09 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:08:09] "[36mGET /static/js/particles_creator.js HTTP/1.1[0m" 304 -
+04:08:10 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:08:10] "[36mGET /static/img/icons/logopoli2.ico HTTP/1.1[0m" 304 -
+04:09:48 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:09:48] "[36mGET /static/img/white-icon_support.webp HTTP/1.1[0m" 304 -
+04:09:48 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:09:48] "[36mGET /static/img/white-icon_mail.webp HTTP/1.1[0m" 304 -
+04:09:48 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 04:09:48] "[36mGET /static/img/logo_ipn-white.webp HTTP/1.1[0m" 304 -
+05:20:12 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:20:12] "GET /information HTTP/1.1" 200 -
+05:20:12 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:20:12] "GET /static/css/style.css HTTP/1.1" 200 -
+05:20:12 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:20:12] "GET /static/js/jquery.js HTTP/1.1" 200 -
+05:20:12 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:20:12] "GET /static/js/modernizr.js HTTP/1.1" 200 -
+05:20:12 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:20:12] "GET /static/js/navbar.js HTTP/1.1" 200 -
+05:20:12 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:20:12] "GET /static/js/particles_creator.js HTTP/1.1" 200 -
+05:20:12 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:20:12] "GET /static/js/index.js HTTP/1.1" 200 -
+05:20:12 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:20:12] "GET /static/js/particles.min.js HTTP/1.1" 200 -
+05:20:14 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:20:14] "GET /static/img/icons/logopoli2.ico HTTP/1.1" 200 -
+05:20:25 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:20:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+05:20:26 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:20:26] "GET /static/css/style.css.map HTTP/1.1" 200 -
+05:26:48 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:26:48] "GET /information HTTP/1.1" 200 -
+05:26:49 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:26:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+05:26:49 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:26:49] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+05:26:49 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:26:49] "[36mGET /static/js/particles.min.js HTTP/1.1[0m" 304 -
+05:26:49 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:26:49] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+05:26:49 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:26:49] "[36mGET /static/js/navbar.js HTTP/1.1[0m" 304 -
+05:26:49 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:26:49] "[36mGET /static/js/modernizr.js HTTP/1.1[0m" 304 -
+05:26:49 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:26:49] "[36mGET /static/js/particles_creator.js HTTP/1.1[0m" 304 -
+05:26:50 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:26:50] "GET /static/css/style.css.map HTTP/1.1" 200 -
+05:26:51 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:26:51] "GET /static/img/icons/logopoli.ico HTTP/1.1" 200 -
+05:57:58 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:57:58] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+05:57:58 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:57:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+05:57:58 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:57:58] "[36mGET /static/js/navbar.js HTTP/1.1[0m" 304 -
+05:57:58 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:57:58] "[36mGET /static/js/modernizr.js HTTP/1.1[0m" 304 -
+05:57:58 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:57:58] "[36mGET /static/js/particles.min.js HTTP/1.1[0m" 304 -
+05:57:58 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:57:58] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+05:57:59 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:57:59] "[36mGET /static/js/particles_creator.js HTTP/1.1[0m" 304 -
+05:58:08 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:58:08] "[33mGET /contact_psychologist HTTP/1.1[0m" 404 -
+05:58:08 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 05:58:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+06:06:02 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:06:02] "GET /information HTTP/1.1" 200 -
+06:06:02 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:06:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+06:06:02 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:06:02] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+06:06:02 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:06:02] "[36mGET /static/js/navbar.js HTTP/1.1[0m" 304 -
+06:06:02 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:06:02] "[36mGET /static/js/particles_creator.js HTTP/1.1[0m" 304 -
+06:06:02 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:06:02] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+06:06:02 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:06:02] "[36mGET /static/js/particles.min.js HTTP/1.1[0m" 304 -
+06:06:02 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:06:02] "[36mGET /static/js/modernizr.js HTTP/1.1[0m" 304 -
+06:06:03 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:06:03] "[33mGET /site.webmanifest HTTP/1.1[0m" 404 -
+06:06:03 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:06:03] "[36mGET /static/img/icons/logopoli.ico HTTP/1.1[0m" 304 -
+06:06:03 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:06:03] "GET /static/img/icons/favicon-32x32.png HTTP/1.1" 200 -
+06:09:12 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:09:12] "GET /information HTTP/1.1" 200 -
+06:09:12 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:09:12] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+06:09:12 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:09:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+06:09:12 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:09:12] "[36mGET /static/js/modernizr.js HTTP/1.1[0m" 304 -
+06:09:12 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:09:12] "[36mGET /static/js/navbar.js HTTP/1.1[0m" 304 -
+06:09:12 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:09:12] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+06:09:12 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:09:12] "[36mGET /static/js/particles.min.js HTTP/1.1[0m" 304 -
+06:09:12 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:09:12] "[36mGET /static/js/particles_creator.js HTTP/1.1[0m" 304 -
+06:09:13 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:09:13] "[36mGET /static/img/icons/logopoli.ico HTTP/1.1[0m" 304 -
+06:09:13 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:09:13] "GET /static/img/icons/site.webmanifest HTTP/1.1" 200 -
+06:09:13 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:09:13] "[36mGET /static/img/icons/favicon-32x32.png HTTP/1.1[0m" 304 -
+06:09:21 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:09:21] "GET /static/img/logo_ipn-white.webp HTTP/1.1" 200 -
+06:09:21 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:09:21] "GET /static/img/white-icon_mail.webp HTTP/1.1" 200 -
+06:09:21 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:09:21] "GET /static/img/white-icon_support.webp HTTP/1.1" 200 -
+06:12:33 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:12:33] "GET /information HTTP/1.1" 200 -
+06:12:33 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:12:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+06:12:33 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:12:33] "[36mGET /static/js/modernizr.js HTTP/1.1[0m" 304 -
+06:12:33 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:12:33] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+06:12:33 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:12:33] "[36mGET /static/js/navbar.js HTTP/1.1[0m" 304 -
+06:12:33 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:12:33] "[36mGET /static/js/particles.min.js HTTP/1.1[0m" 304 -
+06:12:33 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:12:33] "[36mGET /static/js/particles_creator.js HTTP/1.1[0m" 304 -
+06:12:34 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:12:34] "[36mGET /static/img/icons/logopoli.ico HTTP/1.1[0m" 304 -
+06:12:34 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:12:34] "[36mGET /static/img/icons/site.webmanifest HTTP/1.1[0m" 304 -
+06:12:34 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:12:34] "[36mGET /static/img/icons/favicon-32x32.png HTTP/1.1[0m" 304 -
+06:12:36 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:12:36] "[36mGET /static/img/logo_ipn-white.webp HTTP/1.1[0m" 304 -
+06:12:36 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:12:36] "[36mGET /static/img/white-icon_mail.webp HTTP/1.1[0m" 304 -
+06:12:37 AM: INFO [_internal.py: 224] 127.0.0.1 - - [24/Apr/2022 06:12:37] "[36mGET /static/img/white-icon_support.webp HTTP/1.1[0m" 304 -
+06:13:35 AM: INFO [_internal.py: 224]  * Detected change in 'C:\\workspace\\PsicoBurrito\\app\\views.py', reloading
+06:13:47 AM: INFO [_internal.py: 224]  * Restarting with stat
+06:14:21 AM: WARNING [_internal.py: 224]  * Debugger is active!
+06:14:22 AM: INFO [_internal.py: 224]  * Debugger PIN: 838-104-276
+06:14:28 AM: INFO [_internal.py: 224]  * Detected change in 'C:\\workspace\\PsicoBurrito\\app\\views.py', reloading
+06:14:30 AM: INFO [_internal.py: 224]  * Restarting with stat
+06:14:38 AM: WARNING [_internal.py: 224]  * Debugger is active!
+06:14:38 AM: INFO [_internal.py: 224]  * Debugger PIN: 838-104-276
+06:14:40 AM: INFO [_internal.py: 224]  * Detected change in 'C:\\workspace\\PsicoBurrito\\app\\views.py', reloading
+06:14:41 AM: INFO [_internal.py: 224]  * Restarting with stat
+06:14:44 AM: WARNING [_internal.py: 224]  * Debugger is active!
+06:14:44 AM: INFO [_internal.py: 224]  * Debugger PIN: 838-104-276
+06:14:48 AM: INFO [_internal.py: 224]  * Detected change in 'C:\\workspace\\PsicoBurrito\\app\\views.py', reloading
+06:14:49 AM: INFO [_internal.py: 224]  * Restarting with stat
+06:14:52 AM: WARNING [_internal.py: 224]  * Debugger is active!
+06:14:53 AM: INFO [_internal.py: 224]  * Debugger PIN: 838-104-276
+06:15:12 AM: INFO [_internal.py: 224]  * Detected change in 'C:\\workspace\\PsicoBurrito\\app\\views.py', reloading
+06:15:13 AM: INFO [_internal.py: 224]  * Restarting with stat
+06:15:19 AM: WARNING [_internal.py: 224]  * Debugger is active!
+06:15:19 AM: INFO [_internal.py: 224]  * Debugger PIN: 838-104-276
+06:15:23 AM: INFO [_internal.py: 224]  * Detected change in 'C:\\workspace\\PsicoBurrito\\app\\views.py', reloading
+06:15:24 AM: INFO [_internal.py: 224]  * Restarting with stat
+06:15:26 AM: WARNING [_internal.py: 224]  * Debugger is active!
+06:15:26 AM: INFO [_internal.py: 224]  * Debugger PIN: 838-104-276
+06:15:33 AM: INFO [_internal.py: 224]  * Detected change in 'C:\\workspace\\PsicoBurrito\\app\\views.py', reloading
+06:15:33 AM: INFO [_internal.py: 224]  * Restarting with stat
+06:15:38 AM: WARNING [_internal.py: 224]  * Debugger is active!
+06:15:38 AM: INFO [_internal.py: 224]  * Debugger PIN: 838-104-276
+06:15:41 AM: INFO [_internal.py: 224]  * Detected change in 'C:\\workspace\\PsicoBurrito\\app\\views.py', reloading
+06:15:41 AM: INFO [_internal.py: 224]  * Restarting with stat
+06:15:45 AM: WARNING [_internal.py: 224]  * Debugger is active!
+06:15:45 AM: INFO [_internal.py: 224]  * Debugger PIN: 838-104-276
+06:15:50 AM: INFO [_internal.py: 224]  * Detected change in 'C:\\workspace\\PsicoBurrito\\app\\views.py', reloading
+06:15:51 AM: INFO [_internal.py: 224]  * Restarting with stat
+06:15:54 AM: WARNING [_internal.py: 224]  * Debugger is active!
+06:15:54 AM: INFO [_internal.py: 224]  * Debugger PIN: 838-104-276
+06:16:07 AM: INFO [_internal.py: 224]  * Detected change in 'C:\\workspace\\PsicoBurrito\\app\\views.py', reloading
+06:16:07 AM: INFO [_internal.py: 224]  * Restarting with stat
+06:16:12 AM: WARNING [_internal.py: 224]  * Debugger is active!
+06:16:12 AM: INFO [_internal.py: 224]  * Debugger PIN: 838-104-276
+06:16:23 AM: INFO [_internal.py: 224]  * Detected change in 'C:\\workspace\\PsicoBurrito\\app\\views.py', reloading
+06:16:24 AM: INFO [_internal.py: 224]  * Restarting with stat
+06:16:28 AM: WARNING [_internal.py: 224]  * Debugger is active!
+06:16:28 AM: INFO [_internal.py: 224]  * Debugger PIN: 838-104-276
+06:16:52 AM: INFO [_internal.py: 224]  * Detected change in 'C:\\workspace\\PsicoBurrito\\app\\views.py', reloading
+06:16:52 AM: INFO [_internal.py: 224]  * Restarting with stat
+06:16:54 AM: WARNING [_internal.py: 224]  * Debugger is active!
+06:16:54 AM: INFO [_internal.py: 224]  * Debugger PIN: 838-104-276
