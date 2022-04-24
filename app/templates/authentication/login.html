@@ -11,7 +11,7 @@
         {% if errors_flag %}
             <div class="flash-errors">
                 {% for msg in get_flashed_messages() %}
-                <a href="#">{{ msg }}</a>
+                    <span>{{ msg }}</span>
                 {% endfor %}
             </div>
         {% endif %}

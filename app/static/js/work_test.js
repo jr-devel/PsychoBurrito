@@ -34,7 +34,7 @@
         "Sentiría orgullo si fuera un:",//21
         "Si trabajara a medio tiempo, trabajaría en:",//22
         "Cuando aprendo algo nuevo, lo recuerdo mejor si:",//23
-        "Casi siempore estoy:",//24
+        "Casi siempre estoy:",//24
         "Tengo una inclinación a ser:",//25
     ];
     const answersA  = [
@@ -83,7 +83,7 @@
         "Una planta automotriz",//16
         "Altas tecnologías",//17
         "Conocer sobre algún tipo de software nuevo",//18
-        "Mis aportacipones a la tecnoloía",//19
+        "Mis aportaciones a la tecnoloía",//19
         "Cómo son las casas del 2040",//20
         "Gran arquitecto",//21
         "Una fábrica",//22
@@ -99,7 +99,7 @@
         "Problemáticas de personas a los que dan solución",//5
         "Laborando con personas",//6
         "Es una persona que ofrece su tiempo para ayudar y servir a otros",//7
-        "Atendiendo a los invitadoes del evento",//8
+        "Atendiendo a los invitados del evento",//8
         "Darles una cálida bienvenida a los clientes",//9
         "Sociología, Humanidades y Psicología",//10
         "Recursos Humanos",//11
@@ -110,7 +110,7 @@
         "Una institución de educación especial",//16
         "Tipos de terapias psicológicas",//17
         "Ayudar a que terminen pronto su tarea mis sobrinos o hermanos pequeños",//18
-        "Implementar un origrama que mejore la calidad de vida de la gente de escasos recursos",//19
+        "Implementar un programa que mejore la calidad de vida de la gente de escasos recursos",//19
         "Cómo ayudar a resolver problemas personales",//20
         "Benefactor reconocido",//21
         "Un colegio",//22
@@ -129,7 +129,7 @@
         "Hacer un estudio de las instalaciones para su uso y limpieza adecuada",//8
         "Revisar que la calidad de los alimentos sea excelente",//9
         "Funciones del cuerpo y cerebro humano",//10
-        "Higiene y Salus",//11
+        "Higiene y Salud",//11
         "Médico de un hospital del área de emergencias",//12
         "Un pez, una planta y algunos suvenires de lugares que he visitado",//13
         "Fauna y flora de animales exóticos y desconocidos",//14
@@ -138,7 +138,7 @@
         "Nuevos descubrimientos del ADN",//17
         "Ir de visita a algún zoológico o jardín",//18
         "Mis descubrimientos médicos",//19
-        "Cómo podría un viaje de campamento",//20
+        "Cómo podría hacer un viaje de campamento",//20
         "Científico renombrado",//21
         "En las montañas",//22
         "Realizando un análisis profundo de toda la información",//23
@@ -163,7 +163,7 @@
         "Ser un bailarín profesional o un gran artista",//15
         "Un estudio de grabación y video",//16
         "Afinidad por la música y el arte",//17
-        "Tocar algpun instrumento o practicar alguna danza",//18
+        "Tocar algún instrumento o practicar alguna danza",//18
         "Mis obras musicales",//19
         "Cómo hacer animaciones digitales y de video",//20
         "Artista famoso",//21

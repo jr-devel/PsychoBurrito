@@ -12,9 +12,6 @@
     width: min(90%, 120rem);
     margin: 0 auto;
     transition: all ease .3s;
-    &:hover {
-        transform: scale(1.015,1.015);
-    }
 }
 
 .about__description {
@@ -24,17 +21,14 @@
     justify-content: center;
     align-items: center;
     //
-    background: #fff;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(2px);
     padding: 2rem;
     border-radius: 1.5rem;
     gap: 2rem;
     //
-    box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 1.5rem 1.5rem 5px rgba(0, 0, 0, 0.6);
     transition: all ease .3s;
-    &:hover {
-        transform: scale(0.99,0.99);
-        box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.6);
-    }
     .image {
         width: 50%;
         // border-bottom: 6px solid v.$wine;
@@ -52,6 +46,19 @@
                 font-size: 3.8rem;
             }
             color: v.$wine;
+        }
+        .text_description {
+            margin-bottom: 2rem;
+            ul {
+                li {
+                    padding: 1rem 0;
+                    span {
+                        display: inline-block;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 2rem;
+                    }
+                }
+            }
         }
     }
 }

@@ -39,7 +39,10 @@ def information():
 @bp.route('/conocenos')
 @bp.route('/about')
 def about():
-    return render_template('routes/about.html', web_description=web_description)
+    return render_template('routes/about.html', 
+        web_description   = web_description,
+        psycoburrito_info = psycoburrito_info
+    )
 
 @bp.route('/orientacion_academica')
 @bp.route('/work_test')

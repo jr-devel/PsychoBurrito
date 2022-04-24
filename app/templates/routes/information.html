@@ -3,8 +3,76 @@
 {% block title %} Información {% endblock%}
 
 {% block content %}
-<div id="proximamente">
-    <h3>PRÓXIMAMENTE</h3>
-    <p>Seguimos trabajando para que usted tenga una excelente experiencia en la plataforma. Gracias por su paciencia</p>
+<div class="content-help_information">
+    <div class="help_information">
+        <div class="help_information__item">
+            <h3 class="item__title">Ansiedad</h3>
+            <div class="item__description">
+                <p>{{ anxiety }}</p>
+            </div>
+        </div>
+        <div class="help_information__item">
+            <h3 class="item__title">Depresión</h3>
+            <div class="item__description">
+                <p>{{ depression }}</p>
+            </div>
+        </div>
+        <div class="help_information__item">
+            <h3 class="item__title">Bajo Autoestima</h3>
+            <div class="item__description">
+                <p>{{ low_self_esteem }}</p>
+            </div>
+        </div>
+        <div class="help_information__item">
+            <h3 class="item__title">Estrés</h3>
+            <div class="item__description">
+                <p>{{ stress }}</p>
+            </div>
+        </div>
+        <div class="help_information__item">
+            <h3 class="item__title">Manejo de Emociones</h3>
+            <div class="item__description">
+                <p>{{ emotion_management }}</p>
+            </div>
+        </div>
+        <div class="help_information__item">
+            <h3 class="item__title">Aislamiento</h3>
+            <div class="item__description">
+                <p>{{ isolation }}</p>
+            </div>
+        </div>
+        <div class="help_information__item">
+            <h3 class="item__title">Agresividad</h3>
+            <div class="item__description">
+                <p>{{ aggresseiveness }}</p>
+            </div>
+        </div>
+        <div class="help_information__item">
+            <h3 class="item__title">Apatía</h3>
+            <div class="item__description">
+                <p>{{ apathy }}</p>
+            </div>
+        </div>
+        <div class="help_information__item">
+            <h3 class="item__title">Suicidio</h3>
+            <div class="item__description">
+                <p>{{ suicide }}</p>
+            </div>
+        </div>
+    </div>
 </div>
+{% endblock %}
+
+{% block script %}
+<script>
+
+
+(function(){
+
+console.log('info');
+
+}());
+
+
+</script>
 {% endblock %}
