@@ -29,6 +29,13 @@
             font-size: 4rem;
             color: v.$wine;
         }
+        .item__subtitle {
+            font-family: 'Open Sans',sans-serif;
+            font-weight: 500;
+            font-size: 3.5rem;
+            color: #333;
+            margin: 1.5rem 0;
+        }
         .item__description {
             padding: 2rem;
             transition: display linear .5s;
@@ -37,6 +44,18 @@
                 font-size: 2rem;
                 color: #333;
                 margin: 0;
+            }
+            ol {
+                li {
+                    padding: 1rem;
+                }
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+                li {
+                    padding: 1rem 0;
+                }
             }
         }
     }
