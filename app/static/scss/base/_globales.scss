@@ -121,10 +121,16 @@ label.label-error {
 }
 
 #help_btn {
+    display: block;
     width: fit-content;
     background: v.$wine;
     margin-top: 1.5rem;
     padding: 2rem;
     font-family: 'Roboto',sans-serif;
     font-size: 3rem;
+    color: #fff;
+    transition: all ease .5s;
+    &:hover {
+        background: #000;
+    }
 }
