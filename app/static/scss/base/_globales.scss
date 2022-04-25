@@ -119,3 +119,12 @@ label.label-error {
         font-size: 2rem;
     }
 }
+
+#help_btn {
+    width: fit-content;
+    background: v.$wine;
+    margin-top: 1.5rem;
+    padding: 2rem;
+    font-family: 'Roboto',sans-serif;
+    font-size: 3rem;
+}
