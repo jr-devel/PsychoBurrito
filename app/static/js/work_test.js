@@ -204,6 +204,11 @@
     })
     next_question.addEventListener('click', e => {
         e.preventDefault();
+        optA.classList.remove('selected');
+        optB.classList.remove('selected');
+        optC.classList.remove('selected');
+        optD.classList.remove('selected');
+        optE.classList.remove('selected');
         //
         selected_option();
         if (question_index == 25) {
