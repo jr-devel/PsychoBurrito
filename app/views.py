@@ -57,7 +57,7 @@ def help_contact():
 def about():
     return render_template('routes/about.html', 
         web_description   = web_description,
-        psycoburrito_info = psycoburrito_info
+        Psychoburrito_info = Psychoburrito_info
     )
 
 @bp.route('/orientacion_academica')

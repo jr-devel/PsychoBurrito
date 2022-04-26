@@ -5,7 +5,7 @@ with open('app/static/utilities/descriptions.json','r',encoding='utf-8') as file
     #------------------------------------------------------------#
     web = data["web"]
     web_description   = web["web_description"]
-    psycoburrito_info = web['information_psycoburrito']
+    Psychoburrito_info = web['information_Psychoburrito']
     #------------------------------------------------------------#
     info = data["psychological_information"]
     anxiety             =  info["anxiety"]
